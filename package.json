@@ -1,0 +1,12 @@
+{
+  "name": "character-printer",
+  "version": "1.0.0",
+  "description": "Utility for printing human-readable ASCII characters",
+  "main": "index.js",
+  "scripts": {
+    "start": "node cli.js",
+    "test": "node test.js"
+  },
+  "author": "Servall Development",
+  "license": "MIT"
+}
