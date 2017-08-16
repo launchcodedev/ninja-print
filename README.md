@@ -55,28 +55,51 @@ yarn add ninprint
 ```
 
 ## Examples
-```javascript
-const { print: ninprint } = require("ninprint");
 
-ninprint("Hello world.");
+You can `print` directly to the console:
+
+```javascript
+const { print } = require("ninprint");
+
+print("Hello world.");
 // Output:
 //     H e l l o [SPACE] w o r l d .
 
-ninprint("Line feed:\n");
+print("Line feed:\n");
 // Output:
 //     L i n e [SPACE] f e e d : [LF]
+```
 
-ninprint("Carriage return:\r");
+You can use `convert` to return a string:
+
+```javascript
+const { convert } = require("ninprint");
+
+const test1 = convert("Carriage return:\r");
+console.log(test1);
 // Output:
 //     C a r r i a g e [SPACE] r e t u r n : [CR]
 
-ninprint("Null character:\0");
+const test2 = convert("Null character:\0");
+console.log(test2);
 // Output:
 //     N u l l [SPACE] c h a r a c t e r : [NUL]
+```
 
-ninprint(new Buffer([0x00, 0x01, 0x02, 0x03, 0x04, 0x05]));
+You can also pass a `Buffer` to `print`/`convert`:
+
+```javascript
+
+const { print, convert } = require("ninprint");
+
+print(new Buffer([0x00, 0x01, 0x02, 0x03, 0x04, 0x05]));
 // Output:
 //     [NUL] [SOH] [STX] [ETX] [EOT] [ENQ]
+
+const test3 = convert(new Buffer([0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B]));
+console.log(test3);
+// Output:
+//     [ACK] [BEL] [BS] [TAB] [LF] [VT]
 ```
 
 # License

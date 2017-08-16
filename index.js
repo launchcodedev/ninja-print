@@ -1,35 +1,39 @@
 const characterTable = require("./character-table.json");
 
-const print = (value, encoding = "ascii") => {
+const print = (value, encoding) => console.log(convert(value, encoding));
+
+const convert = (value, encoding = "ascii") => {
 
 	// Value is a String
 	if (typeof(value) === "string" || value instanceof String)
-		return printFromString(value);
+		return convertString(value);
 
 	// Value is a Buffer, first convert to String
 	else if (value instanceof Buffer)
-		return printFromString(value.toString(encoding));
+		return convertString(value.toString(encoding));
 
 	// Value has an unknown type
 	else
 		throw `Value passed must be a String or Buffer`;
-}
+};
 
-const printFromString = string => {
+const convertString = string => {
 
 	const symbols = [];
 
 	for (let i = 0; i < string.length; i++) {
 
 		const charCode = string.charCodeAt(i);
-		const symbol = characterTable[charCode].default;
+		const character = characterTable[charCode];
+		const symbol = character && character.default || string[i];
 
-		symbols.push(symbol || string[i]);
+		symbols.push(symbol);
 	}
 
-	console.log(symbols.join(" "));
+	return symbols.join(" ");
 };
 
 module.exports = {
-	print: print
+	print: print,
+	convert: convert
 };
