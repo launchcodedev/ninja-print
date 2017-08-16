@@ -6,9 +6,9 @@
 
 # What is it?
 
-Ninja Print is a utility for printing human-readable special characters.
+`ninprint` is a utility for printing human-readable special characters.
 
-Are you ever working with binary or string data that contains special characters (NUL, CR, LF, etc)? Unfortunately standard print commands (`echo`, `printf`, `console.log`, etc) will not display special characters, making it difficult to determine exactly where they exist in a `string`. Ninja Print makes your life easy by printing out a human-readable form of each character.
+Are you ever working with binary or string data that contains special characters (NUL, CR, LF, etc)? Unfortunately standard print commands (`echo`, `printf`, `console.log`, etc) will not display special characters, making it difficult to determine exactly where they exist in a `string`. `ninprint` makes your life easy by printing out a human-readable form of each character.
 
 # Installation
 
