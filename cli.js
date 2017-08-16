@@ -1,4 +1,4 @@
-const { printCharacters } = require("./");
+const { print: ninprint } = require("./");
 
 // Read a stream and return a buffer
 const readStream = stream => new Promise((resolve, reject) => {
@@ -12,5 +12,5 @@ const readStream = stream => new Promise((resolve, reject) => {
 
 // Read from STDIN and print the symbols
 readStream(process.stdin).then(data => {
-	printCharacters(data);
+	ninprint(data);
 });

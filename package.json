@@ -1,7 +1,7 @@
 {
-  "name": "character-printer",
+  "name": "ninprint",
   "version": "1.0.0",
-  "description": "Utility for printing human-readable ASCII characters",
+  "description": "Finding those ninja characters: Utility for printing human-readable special characters",
   "main": "index.js",
   "scripts": {
     "start": "node cli.js",

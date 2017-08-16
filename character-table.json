@@ -1,130 +1,460 @@
 [
-	"[NUL]",
-	"[SOH]",
-	"[STX]",
-	"[ETX]",
-	"[EOT]",
-	"[ENQ]",
-	"[ACK]",
-	"[BEL]",
-	"[BS]",
-	"[TAB]",
-	"[LF]",
-	"[VT]",
-	"[FF]",
-	"[CR]",
-	"[SO]",
-	"[SI]",
-	"[DLE]",
-	"[DC1]",
-	"[DC2]",
-	"[DC3]",
-	"[DC4]",
-	"[NAK]",
-	"[SYN]",
-	"[ETB]",
-	"[CAN]",
-	"[EM]",
-	"[SUB]",
-	"[ESC]",
-	"[FS]",
-	"[GS]",
-	"[RS]",
-	"[US]",
-	"[SPACE]",
-	"!",
-	"\"",
-	"#",
-	"$",
-	"%",
-	"&",
-	"'",
-	"(",
-	")",
-	"*",
-	"+",
-	",",
-	"-",
-	".",
-	"/",
-	"0",
-	"1",
-	"2",
-	"3",
-	"4",
-	"5",
-	"6",
-	"7",
-	"8",
-	"9",
-	":",
-	";",
-	"<",
-	"=",
-	">",
-	"?",
-	"@",
-	"A",
-	"B",
-	"C",
-	"D",
-	"E",
-	"F",
-	"G",
-	"H",
-	"I",
-	"J",
-	"K",
-	"L",
-	"M",
-	"N",
-	"O",
-	"P",
-	"Q",
-	"R",
-	"S",
-	"T",
-	"U",
-	"V",
-	"W",
-	"X",
-	"Y",
-	"Z",
-	"[",
-	"\\",
-	"]",
-	"^",
-	"_",
-	"`",
-	"a",
-	"b",
-	"c",
-	"d",
-	"e",
-	"f",
-	"g",
-	"h",
-	"i",
-	"j",
-	"k",
-	"l",
-	"m",
-	"n",
-	"o",
-	"p",
-	"q",
-	"r",
-	"s",
-	"t",
-	"u",
-	"v",
-	"w",
-	"x",
-	"y",
-	"z",
-	"{",
-	"|",
-	"}",
-	"~",
-	"[DEL]"
+	{
+		"default": "[NUL]",
+		"escape": "\\0",
+		"description": "Null character"
+	},
+	{
+		"default": "[SOH]",
+		"description": "Start of header"
+	},
+	{
+		"default": "[STX]",
+		"description": "Start of text"
+	},
+	{
+		"default": "[ETX]",
+		"description": "End of text"
+	},
+	{
+		"default": "[EOT]",
+		"description": "End of transmission"
+	},
+	{
+		"default": "[ENQ]",
+		"description": "Enquiry"
+	},
+	{
+		"default": "[ACK]",
+		"description": "Acknowledge"
+	},
+	{
+		"default": "[BEL]",
+		"escape": "\\a",
+		"description": "Bell"
+	},
+	{
+		"default": "[BS]",
+		"escape": "\\b",
+		"description": "Backspace"
+	},
+	{
+		"default": "[TAB]",
+		"escape": "\\t",
+		"description": "Horizontal tab"
+	},
+	{
+		"default": "[LF]",
+		"escape": "\\n",
+		"description": "Line feed"
+	},
+	{
+		"default": "[VT]",
+		"escape": "\\v",
+		"description": "Vertical tab"
+	},
+	{
+		"default": "[FF]",
+		"escape": "\\f",
+		"description": "Form feed"
+	},
+	{
+		"default": "[CR]",
+		"escape": "\\r",
+		"description": "Carriage return"
+	},
+	{
+		"default": "[SO]",
+		"description": "Shift out"
+	},
+	{
+		"default": "[SI]",
+		"description": "Shift in"
+	},
+	{
+		"default": "[DLE]",
+		"description": "Data link escape"
+	},
+	{
+		"default": "[DC1]",
+		"description": "Device control 1"
+	},
+	{
+		"default": "[DC2]",
+		"description": "Device control 2"
+	},
+	{
+		"default": "[DC3]",
+		"description": "Device control 3"
+	},
+	{
+		"default": "[DC4]",
+		"description": "Device control 4"
+	},
+	{
+		"default": "[NAK]",
+		"description": "Negative acknowledge"
+	},
+	{
+		"default": "[SYN]",
+		"description": "Synchronize"
+	},
+	{
+		"default": "[ETB]",
+		"description": "End of transmission block"
+	},
+	{
+		"default": "[CAN]",
+		"description": "Cancel"
+	},
+	{
+		"default": "[EM]",
+		"description": "End of medium"
+	},
+	{
+		"default": "[SUB]",
+		"description": "Substitute"
+	},
+	{
+		"default": "[ESC]",
+		"description": "Escape"
+	},
+	{
+		"default": "[FS]",
+		"description": "File seperator"
+	},
+	{
+		"default": "[GS]",
+		"description": "Group separator"
+	},
+	{
+		"default": "[RS]",
+		"description": "Record separator"
+	},
+	{
+		"default": "[US]",
+		"description": "Unit separator"
+	},
+	{
+		"default": "[SPACE]",
+		"description": "Space"
+	},
+	{
+		"default": "!",
+		"description": "Exclamation mark"
+	},
+	{
+		"default": "\"",
+		"description": "Double quote"
+	},
+	{
+		"default": "#",
+		"description": "Number sign"
+	},
+	{
+		"default": "$",
+		"description": "Dollar sign"
+	},
+	{
+		"default": "%",
+		"description": "Percent sign"
+	},
+	{
+		"default": "&",
+		"description": "Ampersand"
+	},
+	{
+		"default": "'",
+		"description": "Single quote"
+	},
+	{
+		"default": "(",
+		"description": "Left parenthesis"
+	},
+	{
+		"default": ")",
+		"description": "Right parenthesis"
+	},
+	{
+		"default": "*",
+		"description": "Asterisk"
+	},
+	{
+		"default": "+",
+		"description": "Plus"
+	},
+	{
+		"default": ",",
+		"description": "Comma"
+	},
+	{
+		"default": "-",
+		"description": "Minus"
+	},
+	{
+		"default": ".",
+		"description": "Period"
+	},
+	{
+		"default": "/",
+		"description": "Slash"
+	},
+	{
+		"default": "0"
+	},
+	{
+		"default": "1"
+	},
+	{
+		"default": "2"
+	},
+	{
+		"default": "3"
+	},
+	{
+		"default": "4"
+	},
+	{
+		"default": "5"
+	},
+	{
+		"default": "6"
+	},
+	{
+		"default": "7"
+	},
+	{
+		"default": "8"
+	},
+	{
+		"default": "9"
+	},
+	{
+		"default": ":",
+		"description": "Colon"
+	},
+	{
+		"default": ";",
+		"description": "Semicolon"
+	},
+	{
+		"default": "<",
+		"description": "Less-than"
+	},
+	{
+		"default": "=",
+		"description": "Equals"
+	},
+	{
+		"default": ">",
+		"description": "Great-than"
+	},
+	{
+		"default": "?",
+		"description": "Question mark"
+	},
+	{
+		"default": "@",
+		"description": "At sign"
+	},
+	{
+		"default": "A"
+	},
+	{
+		"default": "B"
+	},
+	{
+		"default": "C"
+	},
+	{
+		"default": "D"
+	},
+	{
+		"default": "E"
+	},
+	{
+		"default": "F"
+	},
+	{
+		"default": "G"
+	},
+	{
+		"default": "H"
+	},
+	{
+		"default": "I"
+	},
+	{
+		"default": "J"
+	},
+	{
+		"default": "K"
+	},
+	{
+		"default": "L"
+	},
+	{
+		"default": "M"
+	},
+	{
+		"default": "N"
+	},
+	{
+		"default": "O"
+	},
+	{
+		"default": "P"
+	},
+	{
+		"default": "Q"
+	},
+	{
+		"default": "R"
+	},
+	{
+		"default": "S"
+	},
+	{
+		"default": "T"
+	},
+	{
+		"default": "U"
+	},
+	{
+		"default": "V"
+	},
+	{
+		"default": "W"
+	},
+	{
+		"default": "X"
+	},
+	{
+		"default": "Y"
+	},
+	{
+		"default": "Z"
+	},
+	{
+		"default": "[",
+		"description": "Left bracket"
+	},
+	{
+		"default": "\\",
+		"description": "Backslash"
+	},
+	{
+		"default": "]",
+		"description": "Right bracket"
+	},
+	{
+		"default": "^",
+		"description": "Caret"
+	},
+	{
+		"default": "_",
+		"description": "Underscore"
+	},
+	{
+		"default": "`",
+		"description": "Backtick"
+	},
+	{
+		"default": "a"
+	},
+	{
+		"default": "b"
+	},
+	{
+		"default": "c"
+	},
+	{
+		"default": "d"
+	},
+	{
+		"default": "e"
+	},
+	{
+		"default": "f"
+	},
+	{
+		"default": "g"
+	},
+	{
+		"default": "h"
+	},
+	{
+		"default": "i"
+	},
+	{
+		"default": "j"
+	},
+	{
+		"default": "k"
+	},
+	{
+		"default": "l"
+	},
+	{
+		"default": "m"
+	},
+	{
+		"default": "n"
+	},
+	{
+		"default": "o"
+	},
+	{
+		"default": "p"
+	},
+	{
+		"default": "q"
+	},
+	{
+		"default": "r"
+	},
+	{
+		"default": "s"
+	},
+	{
+		"default": "t"
+	},
+	{
+		"default": "u"
+	},
+	{
+		"default": "v"
+	},
+	{
+		"default": "w"
+	},
+	{
+		"default": "x"
+	},
+	{
+		"default": "y"
+	},
+	{
+		"default": "z"
+	},
+	{
+		"default": "{",
+		"description": "Left brace"
+	},
+	{
+		"default": "|",
+		"description": "Vertical bar"
+	},
+	{
+		"default": "}",
+		"description": "Right brace"
+	},
+	{
+		"default": "~",
+		"description": "Tilde"
+	},
+	{
+		"default": "[DEL]",
+		"description": "Delete"
+	}
 ]
