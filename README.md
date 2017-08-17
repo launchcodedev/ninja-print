@@ -4,6 +4,11 @@
 	<img alt="Ninja Print demo" src="https://secure.servalldatasystems.com/servall_dev_files/ninja-print/ninja-print.gif" width="400px">
 </div>
 
+---
+
+[![license](https://img.shields.io/github/license/servall/ninja-print.svg)]()
+[![npm](https://img.shields.io/npm/v/ninprint.svg)]()
+
 # What is it?
 
 `ninprint` is a utility for printing human-readable special characters.
