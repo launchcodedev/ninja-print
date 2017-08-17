@@ -4,10 +4,10 @@
 	<img alt="Ninja Print demo" src="https://secure.servalldatasystems.com/servall_dev_files/ninja-print/ninja-print.gif" width="400px">
 </div>
 
----
+<br />
 
-[![license](https://img.shields.io/github/license/servall/ninja-print.svg)]()
-[![npm](https://img.shields.io/npm/v/ninprint.svg)]()
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/servall/ninja-print/master/LICENSE)
+[![npm](https://img.shields.io/npm/v/ninprint.svg)](https://www.npmjs.com/package/ninprint)
 
 # What is it?
 
