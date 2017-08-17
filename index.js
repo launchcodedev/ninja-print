@@ -2,7 +2,7 @@ const characterTable = require("./character-table.json");
 
 const print = (value, encoding) => console.log(convert(value, encoding));
 
-const convert = (value, encoding = "ascii") => {
+const convert = (value, encoding = "utf8") => {
 
 	// Value is a String
 	if (typeof(value) === "string" || value instanceof String)
