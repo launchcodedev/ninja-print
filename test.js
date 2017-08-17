@@ -1,4 +1,4 @@
-const { print: ninprint, convert } = require("./");
+const { convert } = require("./");
 
 const assert = (condition, message) => {
 
