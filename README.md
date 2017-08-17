@@ -1,4 +1,6 @@
-<img alt="Ninja Print title" src="https://secure.servalldatasystems.com/servall_dev_files/ninja-print/ninja-print.png" height="180px" width="536.5px">
+<div align="center">
+<img alt="Ninja Print title" src="https://secure.servalldatasystems.com/servall_dev_files/ninja-print/ninja-print.png" width="536.5px">
+</div>
 
 ### *Finding those ninja characters*
 
