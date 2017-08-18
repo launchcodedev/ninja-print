@@ -1,6 +1,6 @@
 {
   "name": "ninprint",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Finding those ninja characters: Utility for printing human-readable special characters",
   "main": "index.js",
   "scripts": {
@@ -10,18 +10,18 @@
   "bin": {
     "ninprint": "./cli.js"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/servall/ninja-print.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/servall/ninja-print.git"
   },
   "author": {
-    "name" : "Servall Development",
-    "email" : "support@servalldev.com",
-    "url" : "https://www.servalldev.com/"
+    "name": "Servall Development",
+    "email": "support@servalldev.com",
+    "url": "https://www.servalldev.com/"
   },
   "bugs": {
-    "url" : "https://github.com/servall/ninja-print/issues",
-    "email" : "support@servalldev.com"
+    "url": "https://github.com/servall/ninja-print/issues",
+    "email": "support@servalldev.com"
   },
   "homepage": "https://ninja-print.servalldev.com",
   "keywords": [
@@ -35,5 +35,8 @@
     "utility",
     "cli"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.11.0"
+  }
 }
