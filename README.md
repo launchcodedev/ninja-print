@@ -82,6 +82,7 @@ Note: `ninprint $'Test\0\r\n'` will terminate after `Test` because of the `\0` n
     Print common C-style escape sequences. Print all other characters as `default`.
 
     Supported escape sequence characters are:
+    
     | Character | Escape |
     | --------- |--------|
     | `[NUL]`   | `\0`   |
