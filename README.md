@@ -69,7 +69,7 @@ Note: `ninprint $'Test\0\r\n'` will terminate after `Test` because of the `\0` n
   
   * `default`:
   
-    Print zero-width special characters and spaces using their abreviated form. Print all other characters as is.
+    Print zero-width special characters and spaces using their abbreviated form. Print all other characters as is.
     
     ```bash
     $ printf "Test \0\r\n" | ninprint -f default
