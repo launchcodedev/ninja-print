@@ -1,7 +1,7 @@
 <div align="center">
     <img alt="Ninja Print title" src="https://secure.servalldatasystems.com/servall_dev_files/ninja-print/ninja-print.png" width="536.5px">
     <h3><em>Finding those ninja characters</em></h3>
-    <img alt="Ninja Print demo" src="https://secure.servalldatasystems.com/servall_dev_files/ninja-print/ninja-print.gif" width="400px">
+    <img alt="Ninja Print demo" src="https://secure.servalldatasystems.com/servall_dev_files/ninja-print/ninja-print.gif" width="800px">
 </div>
 
 <br />
